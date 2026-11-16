@@ -1,14 +1,20 @@
-# Portfolio — wersja startowa
+# Portfolio — strona osobista
 
-Responsywna strona portfolio w języku polskim. Czysty HTML, CSS i JavaScript — bez zależności build-time.
+Responsywne portfolio w języku polskim. Projekt działa jako statyczna strona HTML/CSS/JS i nie wymaga procesu budowania.
 
-## Publikacja
-Włącz GitHub Pages: Settings → Pages → Deploy from a branch → main → /(root), po scaleniu zmian.
+## Struktura
+- `index.html` — treść i sekcje strony
+- `styles.css` — wygląd, responsywność i dostępność
+- `script.js` — drobne funkcje interfejsu
+- `favicon.svg` — znak graficzny
 
-## Do uzupełnienia przed publikacją
-- adres e-mail w sekcji kontaktu (`index.html`)
-- docelowy podpis/monogram zamiast „W.”
-- linki do projektów i profili
-- finalne opisy oraz ewentualne zdjęcie
+## Publikacja przez GitHub Pages
+Po scaleniu zmian do `main` otwórz **Settings → Pages** i wybierz **Deploy from a branch → main → /(root)**.
 
-Projekty opisano jako koncepcje/narzędzia; nie dodano niepotwierdzonych osiągnięć ani danych kontaktowych.
+## Elementy do personalizacji
+- właściwy adres e-mail lub formularz kontaktowy
+- potwierdzony podpis/nazwa oraz docelowy znak osobisty
+- zdjęcie portretowe (nie dodano go bez zatwierdzenia konkretnego zdjęcia)
+- opisy, statusy i linki do kolejnych projektów
+
+Nie wpisano fikcyjnych danych kontaktowych ani niepotwierdzonych osiągnięć. NEXUS AI i Agents Hub są oznaczone jako projekty rozwijane/wewnętrzne.
