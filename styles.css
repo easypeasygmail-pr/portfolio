@@ -4,3 +4,6 @@
 
 /* Fix miniature browser illustration positioning */
 .browser{position:relative}.browser hr{position:static;width:100%;margin:-10px 0 17px}
+
+/* Navigation and accessibility refinements */
+html{scroll-padding-top:24px}section[id],main[id]{scroll-margin-top:20px}.skip-link{position:absolute;left:16px;top:-60px;z-index:20;padding:12px 16px;background:var(--blue);color:#071019;font:12px var(--mono);text-decoration:none}.skip-link:focus{top:12px}@media(max-width:800px){.top nav a:first-child{display:inline-block}}
