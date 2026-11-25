@@ -1164,3 +1164,12 @@
     }
   }
 }
+/* Edytor: reguły ograniczone do jego kontrolek. */
+#v-edit-button{position:fixed;right:1rem;bottom:1rem;z-index:90;min-height:44px;border:1px solid #1c2c44;border-radius:999px;background:#08101c;color:#e7f3ff;padding:.65rem 1.2rem;font-family:Outfit,sans-serif;cursor:pointer}
+#v-editor{position:fixed;inset:0 0 0 auto;width:min(100%,420px);height:100dvh;z-index:100;background:#08101c;color:#e7f3ff;border-left:1px solid #1c2c44;overflow:auto;padding:1.2rem;font:16px Outfit,sans-serif;overscroll-behavior:contain}
+#v-editor[hidden]{display:none}#v-editor h2{font:28px Fraunces,serif;margin:0 0 1rem}#v-editor h3{font:21px Fraunces,serif;margin:1.2rem 0 .5rem}
+#v-editor button,#v-editor input,#v-editor select,#v-editor textarea{font:inherit;min-height:44px;border:1px solid #1c2c44;border-radius:12px;background:#0e1726;color:#e7f3ff;padding:.65rem;max-width:100%}
+#v-editor button{cursor:pointer;border-radius:999px}#v-editor button:hover{border-color:#3ec8ff}#v-editor button:focus-visible,#v-editor input:focus-visible,#v-editor textarea:focus-visible,#v-editor select:focus-visible{outline:2px solid #3ec8ff;outline-offset:2px}
+#v-editor label{display:block;margin:.8rem 0}#v-editor textarea,#v-editor label>input,#v-editor label>select{display:block;width:100%;margin-top:.35rem}#v-editor textarea{min-height:100px;resize:vertical}#v-editor p{font-size:14px;color:#9aafc6;margin:.7rem 0}#v-editor .v-actions{display:flex;gap:.5rem;flex-wrap:wrap;margin:.7rem 0}#v-editor .v-field{width:100%;text-align:left;margin:.25rem 0;overflow-wrap:anywhere}#v-editor .v-primary{background:#3ec8ff;color:#040814}#v-editor .v-top{display:flex;justify-content:space-between;align-items:start;gap:1rem}#v-editor input[type=file]{font-size:14px}#v-editor .v-search{width:100%;margin:.6rem 0}
+body.v-editing [data-v-field]{cursor:text;outline:1px dashed #3ec8ff;outline-offset:3px}body.v-editing img{cursor:pointer;outline:1px dashed #3ec8ff}body.v-editing #v-edit-button{background:#3ec8ff;color:#040814}
+@media(min-width:900px){body.v-editing #v-editor{width:380px}body.v-editing{padding-right:380px}}@media(prefers-reduced-motion:reduce){#v-editor *{scroll-behavior:auto}}
