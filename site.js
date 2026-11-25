@@ -366,7 +366,7 @@
   async function download() {
     status('Przygotowuję kompletny ZIP…');
     try {
-      const entries=await Promise.all(assetPaths.map(async path=>{const r=await fetch(path);if(!r.ok)throw Error(path);return[path,new Uint8Array(await r.arrayBuffer())];}));
+      const entries=await Promise.all(assetPaths.map(async path=>{const r=await fetch(path + "?v=editor2", {cache:"no-store"});if(!r.ok)throw Error(path);return[path,new Uint8Array(await r.arrayBuffer())];}));
       const enc=new TextEncoder();let html=new TextDecoder().decode(entries.find(e=>e[0]==='index.html')[1]);
       html=html.replace(/<script id="v-content" type="application\/json">[\s\S]*?<\/script>/g,'');
       const content=JSON.stringify(state()).replace(/</g,'\\u003c');
